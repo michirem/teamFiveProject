@@ -1,0 +1,295 @@
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Rock+Salt&family=Special+Elite&display=swap");
+h3 {
+  color: #737e81;
+  font-family: 'Special Elite', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pageText {
+  text-align: justify;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.aboutHero h1 {
+  color: #f3f2f0;
+  font-family: 'Special Elite', cursive;
+}
+
+.aboutHero a {
+  position: relative;
+  z-index: 4;
+}
+
+.video-header {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.video-header, .video-header video, .video-header .viewport-header {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-header video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video-header .viewport-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.expose h1 {
+  font-family: 'Special Elite', cursive;
+  color: #737e81;
+}
+
+.exposeCarousel {
+  border-radius: 15px;
+  width: 60%;
+  overflow: hidden;
+}
+
+.exposeCarousel h1, .exposeCarousel h2, .exposeCarousel h4 {
+  font-family: 'Special Elite', cursive;
+}
+
+.exposeCarousel .btn {
+  padding-top: 10px;
+  border: 0.5px white solid;
+  background: white;
+  color: #d99304;
+  font-family: 'Special Elite', cursive;
+}
+
+.exposeCarousel .btn:hover {
+  background: #d99304;
+  color: white !important;
+}
+
+.exposeCarousel img {
+  height: 100% !important;
+}
+
+main {
+  position: relative;
+  margin-top: 100vh;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+main::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: -100vh;
+}
+
+.firstContainer {
+  padding-top: 8vw;
+}
+
+.firstContainer .introImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.firstContainer .introImg img {
+  height: 500px;
+  width: 100%;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#certificateBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8vw;
+  margin-top: 8vw;
+}
+
+#certificateBox .textBox {
+  padding-left: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: justify;
+}
+
+#certificateBox img {
+  border-radius: 15px;
+  height: 380px;
+}
+
+@media all and (max-width: 767px) {
+  #certificateBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #certificateBox img {
+    height: 65vw;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+  #certificateBox h3 {
+    margin: auto;
+  }
+  .firstContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .firstContainer .introImg {
+    padding-bottom: 30px;
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  #certificateBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #certificateBox img {
+    height: 65vw;
+    margin-bottom: 30px;
+  }
+  #certificateBox .textBox {
+    padding-left: 0;
+  }
+  #certificateBox h3 {
+    margin: auto;
+  }
+  .firstContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .firstContainer .introImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 500px;
+    margin-bottom: 30px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .firstContainer h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .secondContainer h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.img-text {
+  width: 100%;
+  height: 90%;
+  display: block;
+  text-align: center;
+  padding: 50px 50px;
+  background: #c2b4a1;
+  color: white;
+  border-radius: 15px;
+  font-family: 'Special Elite', cursive;
+}
+
+.single-box {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.img-area {
+  width: 100px;
+  height: 100px;
+  margin-bottom: -40px;
+  z-index: 1000;
+  border: 5px solid #f3f2f0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.img-area img {
+  width: 100%;
+}
+/*# sourceMappingURL=home.component.css.map */

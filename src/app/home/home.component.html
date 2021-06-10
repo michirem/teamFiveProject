@@ -1,0 +1,266 @@
+<header class="video-header">
+    <video
+        autoplay
+        playsinline
+        muted
+        loop
+        id="myVideo"
+    >
+        <source src="/assets/video/background_video.mp4" type="video/mp4">
+    </video>
+    <app-navigation></app-navigation>
+    <div class="aboutHero viewport-header d-flex flex-column justify-content-center align-items-center text-center">
+        <a routerLink="/" class="logo">
+            <img class="logo" src="assets/img/logo1.png" alt="Logo">
+        </a>
+        <h1>Craft
+            <br>
+            and
+            <br>
+            Mastery
+        </h1>
+    </div>
+</header>
+<main>
+    <div class="container">
+    <!-- gallery carousel starts here -->
+    <div class="expose d-flex flex-column align-items-center mt-4">
+        <h1>Exposé</h1>
+    <div id="carouselExampleIndicators" class="exposeCarousel carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 13"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="firstItem carousel-item active d-flex justify-content-center align-items-center">
+            <img src="https://images.pexels.com/photos/6790058/pexels-photo-6790058.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="d-block w-100" alt="galleryImg">
+          </div>
+          <div class="carousel-item" *ngFor="let galleryItem of artgallery">
+            <img src="{{galleryItem.image}}" class="d-block w-100" alt="galleryImg">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>{{galleryItem.name}}</h2>
+                <h4>{{galleryItem.material}}</h4>
+                <a class="btn" routerLink="/gallery">Take a Tour</a>
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Introduction section  -->
+    <div class="firstContainer row my-5">
+        <div class="pageText col-12 col-lg-7 d-flex flex-column justify-content-center mx-0 ps-lg-0 pe-lg-5">
+            <h3>The Craft</h3>
+            <p>Wood is an imperfect material. Which, to our mind, makes it the perfect material.
+                It is far more tempestuous and fickle than metal or glass, or clay, for example. These tend to have somewhat predictable tones, and foreseeable densities and movements. Working with them one is prone to calculable results. A piece of steel forged in Pittsburgh is nearly indistinguishable from one made in Beijing or in Bosnia. But a piece of wood, even if it comes from the other side of the very same tree, often varies greatly in hue and density and in temperament.
+                The other materials are like a companion who is, well, companionable. But wood is as a fiery dance partner, with flashing eyes and wildly athletic movements, who can explode off the walls one moment, and then mellow into a soft balletic repose. Working in glass might leave one satisfied. The end result with wood is much more akin to exaltation.
+                Just ask yourself: would you dine with someone over a cold slab of glass or over an ungiving hard steel, or a coarse ceramic slab? Or, would you prefer the sensuous experience that is a smooth, warm piece of timber that is hand planed and finished to a sumptuous perfection?
+                Wood is like we humans: infinitely variable, and therein lies its beauty.
+                </p>
+        </div>
+        <div class="introImg col-12 col-lg-5 mx-0 px-0">
+            <img src="assets/img/working.jpg" alt="Darnell and Jasmin working">
+        </div>
+    </div>
+    <!-- Certificate section  -->
+    <div class="container secondContainer" id="certificateBox">
+        <div class="imgBox">
+            <img src="assets/img/certificate.jpg" alt="certificate">
+        </div>
+        <div class="textBox">
+            <h3>The Mastery</h3>
+            <p>After attending and successfully completing our course for woodworking, students receive our industry recognized certificate of excellence. This certificate opens the door to a world of opportunities in the woodworking industry.
+            </p>
+        </div>
+    </div>    
+        
+<!-- Review section carousel -->
+<div class="row">
+    <div class="col-12">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators my-1">
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-box d-flex flex-column align-items-center">
+                                <div class="img-area">
+                                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="John">
+                                </div>
+                                <div class="img-text">
+                                    <h2>"Most stunning furniture I ever owned."</h2>
+                                    <p class="my-0">John - 26 y.o.</p>
+                                    <p class="my-0">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-box d-flex flex-column align-items-center">
+                                <div class="img-area">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80" alt="Theresa">
+                                </div>
+                                <div class="img-text">
+                                    <h2>"Unique and beautiful. Exellent customer service, I felt like family!"</h2>
+                                    <p class="my-0">Theresa - 22 y.o.</p>
+                                    <p class="my-0">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-4">
+                            <div class="single-box d-flex flex-column align-items-center">
+                                <div class="img-area">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="Peter">
+                                </div>
+                                <div class="img-text">
+                                    <h2>"I use my cutting board daily, great quality!"</h2>
+                                    <p class="my-0">John - 26 y.o.</p>
+                                    <p class="my-0">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-box d-flex flex-column align-items-center">
+                                <div class="img-area">
+                                    <img src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80" alt="Joanna">
+                                </div>
+                                <div class="img-text">
+                                    <h2>"My custom chair came out exactly the way I wanted. I'm blown away by the attention to detail!"</h2>
+                                    <p class="my-0">Joanna- 28 y.o.</p>
+                                    <p class="my-0">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-box d-flex flex-column align-items-center">
+                                <div class="img-area">
+                                    <img src="https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Omar">
+                                </div>
+                                <div class="img-text">
+                                    <h2>"That’s not just furniture, this is Art!"</h2>
+                                    <p class="my-0">Omar - 29 y.o.</p>
+                                    <p class="my-0">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-4">
+                            <div class="single-box d-flex flex-column align-items-center">
+                                <div class="img-area">
+                                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="Lisa">
+                                </div>
+                                <div class="img-text">
+                                    <h2>"Love supporting this small, local business!"</h2>
+                                    <p class="my-0">Lisa - 23 y.o.</p>
+                                    <p class="my-0">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-box d-flex flex-column align-items-center">
+                                <div class="img-area">
+                                    <img src="https://images.unsplash.com/photo-1469460340997-2f854421e72f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="Olina">
+                                </div>
+                                <div class="img-text">
+                                    <h2>"So happy I found this gem. Darnell and Jasmine are so skilled and friendly!"</h2>
+                                    <p class="my-0">Olina - 26 y.o.</p>
+                                    <p class="my-0">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-box d-flex flex-column align-items-center">
+                                <div class="img-area">
+                                    <img src="https://images.unsplash.com/photo-1525186402429-b4ff38bedec6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80" alt="Andrea">
+                                </div>
+                                <div class="img-text">
+                                    <h2>"Never buying furniture anywhere else again."</h2>
+                                    <p class="my-0">Andrea - 29 y.o.</p>
+                                    <p class="my-0">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-4">
+                            <div class="single-box d-flex flex-column align-items-center">
+                                <div class="img-area">
+                                    <img src="https://images.unsplash.com/photo-1465429167186-266ef03d6277?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="Maria">
+                                </div>
+                                <div class="img-text">
+                                    <h2>"Skill, style, quality, its 5 stars from me!"</h2>
+                                    <p class="my-0">Maria - 31 y.o.</p>
+                                    <p class="my-0">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</main>
+<app-footer></app-footer>

@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-md navbar-light static-top mt-2 mx-3"  style="z-index: 3;"> <!--fixed-top-->
+    <div class="container-fluid d-flex flex-md-column">
+        <button class="navbar-toggler me-4 order-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler1" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> <!--navbar-toggler-icon-->
+                <!-- to replace the fonts aweseom burger for the bootstrap one - you need to add the class in row above ;) -->
+                <i class="fas fa-bars fa-2x burger"></i> 
+            </span>
+        </button>
+        <div class="collapse navbar-collapse order-2" id="navbarToggler1">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item mx-4">
+                    <a class="nav-link" aria-current="page" routerLink="/">Home</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a class="nav-link" routerLink="../gallery">Gallery</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a class="nav-link" routerLink="../about">About Us</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a class="nav-link" routerLink="../contact">Contact</a>
+                </li>   
+            </ul>
+        </div>
+        <!-- <div class="navSocialMedia justify-content-center col-sm-12 col-md-1 col-lg-2 " style="z-index: 2;"> -->
+        <div class="navSocialMedia order-1 order-md-2 ms-0" style="z-index: 2;">
+            <!-- <nav class="navbar navbar-expand navbar-light"> -->
+                <ul class="socialMedia navbar-nav d-flex flex-row flex-lg-row">
+                    <li class="nav-item m-3">
+                        <a class="nav-link d-flex"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="nav-item m-3">
+                        <a class="nav-link d-flex"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item m-3">
+                        <a class="nav-link d-flex"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                </ul>
+            <!-- </nav> -->
+        </div>
+    </div>
+</nav>

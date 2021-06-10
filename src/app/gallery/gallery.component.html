@@ -1,0 +1,41 @@
+<header class="video-header">
+    <video
+        autoplay
+        playsinline
+        muted
+        loop
+        id="myVideo"
+    >
+        <source src="/assets/video/background_video_3.mp4" type="video/mp4">
+    </video>
+    <app-navigation></app-navigation>
+    <div class="galleryHero viewport-header d-flex flex-column justify-content-center align-items-center text-center">
+        <a routerLink="/" class="logo">
+            <img class="logo" src="assets/img/logo1.png" alt="Logo">
+        </a>
+        <h1>
+            Art.
+            Timeless.
+        </h1>
+    </div>
+</header>
+<main>
+    <div *ngFor="let item of artgallery" class="galleryItem">
+        <div class="galleryImg">
+            <img src="{{item.image}}" alt="galleryImg">
+        </div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="d-flex flex-column justify-content-center align-items-center col-12 col-md-6 mx-0">
+                    <h2>{{item.name}}</h2>
+                    <h4>{{item.material}}</h4>
+                </div>
+                <div class="col-12 col-md-6 mx-0">
+                    <p>{{item.description}}</p>
+                    <p class="datePosted">Created on: {{item.datePosted}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<app-footer></app-footer>

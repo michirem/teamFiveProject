@@ -1,0 +1,232 @@
+// Colors
+
+/* SCSS HEX */
+$cultured: #f3f2f0ff;
+$khaki-web: #c2b4a1ff;
+$harvest-gold: #d99304ff;
+$gray-web: #737e81ff;
+$dark-sienna: #3d1f1cff;
+
+/* SCSS HSL */
+$cultured: hsla(40, 11%, 95%, 1);
+$khaki-web: hsla(35, 21%, 70%, 1);
+$harvest-gold: hsla(40, 96%, 43%, 1);
+$gray-web: hsla(193, 6%, 48%, 1);
+$dark-sienna: hsla(5, 37%, 17%, 1);
+
+/* SCSS RGB */
+$cultured: rgba(243, 242, 240, 1);
+$khaki-web: rgba(194, 180, 161, 1);
+$harvest-gold: rgba(217, 147, 4, 1);
+$gray-web: rgba(115, 126, 129, 1);
+$dark-sienna: rgba(61, 31, 28, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #f3f2f0ff, #c2b4a1ff, #d99304ff, #737e81ff, #3d1f1cff);
+$gradient-right: linear-gradient(90deg, #f3f2f0ff, #c2b4a1ff, #d99304ff, #737e81ff, #3d1f1cff);
+$gradient-bottom: linear-gradient(180deg, #f3f2f0ff, #c2b4a1ff, #d99304ff, #737e81ff, #3d1f1cff);
+$gradient-left: linear-gradient(270deg, #f3f2f0ff, #c2b4a1ff, #d99304ff, #737e81ff, #3d1f1cff);
+$gradient-top-right: linear-gradient(45deg, #f3f2f0ff, #c2b4a1ff, #d99304ff, #737e81ff, #3d1f1cff);
+$gradient-bottom-right: linear-gradient(135deg, #f3f2f0ff, #c2b4a1ff, #d99304ff, #737e81ff, #3d1f1cff);
+$gradient-top-left: linear-gradient(225deg, #f3f2f0ff, #c2b4a1ff, #d99304ff, #737e81ff, #3d1f1cff);
+$gradient-bottom-left: linear-gradient(315deg, #f3f2f0ff, #c2b4a1ff, #d99304ff, #737e81ff, #3d1f1cff);
+$gradient-radial: radial-gradient(#f3f2f0ff, #c2b4a1ff, #d99304ff, #737e81ff, #3d1f1cff);
+
+// Font imports
+
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Rock+Salt&family=Special+Elite&display=swap');
+
+// General Styling
+.container-fluid {
+    //background-color: $gray-web;
+    font-family: 'Special Elite', cursive;
+}
+
+// .logo img, .navSocialMedia {
+//     // border: 1px solid red; //remove 
+// } 
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.burger {
+    color: $cultured;
+}
+
+ul {
+    width: 100%;
+    a {
+    font-size: 20pt;
+    }
+}
+/*# sourceMappingURL=footer.component.css.map */
+
+ul a:hover {
+    color: $harvest-gold !important;
+}
+
+.collapse {
+    background: $cultured;
+    border-radius: 15px;
+    li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        a {
+            color: $gray-web;
+        }
+    }
+}
+
+.collapsing {
+    background: $cultured;
+    border-radius: 15px;
+    li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        a {
+            color: $gray-web;
+        }
+    }
+}
+
+.navSocialMedia a {
+    color: $cultured;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* hamburger hover and focus doesnt work well*/
+// .navbar-toggler:hover, .navbar-toggler:focus {
+//     outline: hotpink;
+//     color: $harvest-gold !important;
+// }
+
+
+@media all and (min-width: 575px) and (max-width: 767px) {
+    /* in case we want to fix the navbar on top if */
+    
+    /* body*/
+    // body {
+    //     position: fixed;
+    //     overflow: hidden;
+    // }
+
+    /* navbar */
+    // nav {
+    //     position: fixed;
+    //     top: 0; /* Position the navbar at the top of the page */
+    //     width: 100%; /* Full width */
+    // }
+    /* collapse nav menue */
+    //.collapse {
+        //position:static;
+        //top: 0%;
+        //right: 0%;
+        //height: 100vh;
+    //}
+    /* end --- --- --- --- --- --- --- --- --- --- --- --- */
+
+    /* set color of burger */
+    // .burger {
+    //     //width: 3vw;
+    //     color: $cultured;
+    // }
+
+    /* set parameters for collapse nav menue */
+    // .collapse {
+    //     background-color: $cultured;
+    // }
+
+    /* set padding for list element */
+    // .collapse ul {
+    //     // margin: 0;
+    //     // padding: 7vw 0;
+    //     //border: 1px solid yellow; //remove this 
+    // }
+
+    /* set margin top for link elements */
+    // .collapse li {
+    //     margin-top: 2vw;
+    // }
+    /* unset margin top for first link element */
+    // .collapse li:first-child {
+    //     margin-top: 0;
+    // }
+
+    /* font size links and social media links */
+    // .collapse a, .navSocialMedia a {
+    //     font-size: 25pt; 
+    // }
+
+    /* font color for collapsed nav menue */
+    // .collapse a {
+    //     color: $gray-web !important;
+    // }
+    
+    /* transition for collapsed nav menue */
+    // .collapsing {
+    //     transition: none;
+    // }
+
+    /* border for the toggler aka burger */
+    .navbar-toggler {
+        padding: 1px 2px;
+        border-color: $cultured;
+    }
+
+    /* test - dont work atm */
+    .navbar-toggler:focus {
+        padding: 1px 2px;
+        outline: red !important;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    // .collapse ul {
+    //     margin: 0;
+    //     //border: 1px solid violet; //remove this 
+    // }
+    .collapse {
+        background: none;
+        li {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            a {
+                color: $cultured;
+            }
+        }
+    }
+    /* font size links and social media links */
+    .collapse a, .navSocialMedia a {
+        font-size: 18pt;
+    }
+}
+
+@media all and (min-width: 992px) {
+    // .collapse ul {
+    //     // margin: 0;
+    //     //border: 1px solid green; //remove this 
+    // }
+
+    .collapse {
+        background: none;
+        li {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            a {
+                color: $cultured;
+            }
+        }
+    }
+
+    /* font size links and social media links */
+    .collapse a, .navSocialMedia a {
+        font-size: 22pt; 
+    }
+}
